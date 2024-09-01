@@ -48,7 +48,6 @@ class Library {
                 return;
             }
         }
-        echo "Book not found.\n";
     }
 
     public function listBooks() {
@@ -63,9 +62,9 @@ class Library {
     }
 }
 
-$book1 = new Book("The Great Gatsby", "F. Scott Fitzgerald", 12.99);
-$book2 = new Book("1984", "George Orwell", 8.99);
-$library = new Library("City Library");
+$book1 = new Book("Harry Potter and the Deathly Hallows", "J. K. Rowling", 1000);
+$book2 = new Book("A Tomb of Dracula", "Gerry Conway, Archie Goodwin, Gardner Fox, Marv Wolfman", 500);
+$library = new Library("World Library");
 
 $library->addBook($book1);
 $library->addBook($book2);
@@ -74,8 +73,9 @@ $book1->updateStock(50);
 
 $library->listBooks();
 
-$library->removeBook("1984");
+$library->removeBook("Harry Potter and the Deathly Hallows");
 
 $library->listBooks();
 
+//Nahirapan ako maam jan sa mga addBook,UpdateBook at Listbook. Yan pa yung d niyo papo natuturo kaya nag sesearch lang po kami huhu.
 ?>
